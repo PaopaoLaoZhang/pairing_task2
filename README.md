@@ -12,38 +12,12 @@
 │  README.md
 │  
 └─main
-    ├─.idea
-    │  │  .gitignore
-    │  │  main.iml
-    │  │  misc.xml
-    │  │  modules.xml
-    │  │  vcs.xml
-    │  │  workspace.xml
-    │  │  
-    │  └─inspectionProfiles
-    │          profiles_settings.xml
-    │          Project_Default.xml
     │          
     └─python
         │  AttendanceTableBuilder.py
         │  main.py
         │  ModelSelect.py
         │  TestDemo.py
-        │  
-        ├─.idea
-        │  │  .gitignore
-        │  │  misc.xml
-        │  │  modules.xml
-        │  │  team_work.iml
-        │  │  vcs.xml
-        │  │  workspace.xml
-        │  │  
-        │  └─inspectionProfiles
-        │          profiles_settings.xml
-        │          
-        └─__pycache__
-                AttendanceTableBuilder.cpython-310.pyc
-                ModelSelect.cpython-310.pyc
 ```
 
 ## 环境要求
