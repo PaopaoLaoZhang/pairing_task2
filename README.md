@@ -2,8 +2,11 @@
 
 软件工程第二次结队作业
 
+[toc]
+
 ## 项目结构
 
+```
 :.
 │  list.txt
 │  README.md
@@ -41,6 +44,7 @@
         └─__pycache__
                 AttendanceTableBuilder.cpython-310.pyc
                 ModelSelect.cpython-310.pyc
+```
 
 ## 环境要求
 
