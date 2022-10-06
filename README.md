@@ -2,7 +2,15 @@
 
 软件工程第二次结队作业
 
-[toc]
+- [CallAlgorithm](#CallAlgorithm)
+
+  - [项目结构](##项目结构)
+
+  - [环境要求](##环境要求)
+
+  - [快速开始](##快速开始)
+
+  - [API](##API)
 
 ## 项目结构
 
@@ -22,23 +30,15 @@
 
 ## 环境要求
 
-- python3
+see:[环境依赖](./requirements.txt)
 
-- pandas
+**导入依赖：**
 
-- random
-
-- sklearn
-
-如果环境中缺少某个python软件包，可以使用`pip`或`conda`命令安装。
-
-例如：`pip install pandas`
-
-​          `conda install pandas`
+命令行输入:`pip install -r requirements.txt`
 
 ## 快速开始
 
-可以参考：[TestDemo.py](main\python\TestDemo.py)
+可以参考：[TestDemo.py](./main/python/TestDemo.py)
 
 - 生成出勤记录
 
