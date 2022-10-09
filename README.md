@@ -38,7 +38,7 @@ see:[环境依赖](./requirements.txt)
 
 ## 快速开始
 
-可以参考：[TestDemo.py](./main/python/TestDemo.py)
+可以参考：[TestDemo.py](./main/python/algorithm_test.py)
 
 - 生成出勤记录
 

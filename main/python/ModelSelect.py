@@ -5,11 +5,6 @@
 from sklearn.metrics import accuracy_score as acc
 
 
-def split_x_y(data):
-    df = data.copy()
-    y = df["come"]
-    x = df.drop("come", axis=1)
-    return x, y
 
 
 def get_score(test_datas, algorithm):
@@ -29,8 +24,8 @@ def get_score(test_datas, algorithm):
         record_label = record["come"]  # train_y
         record = record.drop("come", axis=1)  # train_X
         result = algorithm.predict(record)  # predict_y
-        request_num += 90 - result.sum()  # 统计请求次数(点名次数)
-        ids = result.argsort()[:90 - result.sum()]  # 获取被点名学生的id
+        request_num += 90 - sum(result)  # 统计请求次数(点名次数)
+        ids = result.argsort()[:90 - sum(result)]  # 获取被点名学生的id
         hit_num += (record_label[ids] == result[ids]).sum()  # 统计点名命中率
     # print("hit_num:{} \n request_num:{}".format(hit_num, request_num))
     score = hit_num / request_num  # 统计得分
