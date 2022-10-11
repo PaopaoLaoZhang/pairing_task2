@@ -165,6 +165,7 @@ class AttendanceTableBuilder:
 
             self.courses_records.append(course_records)
 
+
     def get_course_statistics(self, mean=False, std=False):
         """
         统计每门课每位同学的总出勤信息(总出勤次数，总出勤率[总出勤率均值，总出勤率标准差])
