@@ -96,7 +96,9 @@ class AttendanceTableBuilder:
             time = 0
             for time_data in course_data:
                 time += 1
-                time_data.to_csv(r"../data/course{}_time{}_records.csv".format(course_id, time))
+                # df = pd.DataFrame
+                # df.to_csv
+                time_data.to_csv(r"../data/course{}_time{}_records.csv".format(course_id, time), mode="w+")
 
     # 随机生成学生到勤信息
     def build_tables(self):
@@ -109,7 +111,7 @@ class AttendanceTableBuilder:
         """
         if self.courses_records is not None:
             return
-        feature_name = ["id", "course_id", "come"]
+        feature_name = ["id", "course_id", "avg_grade_point", "come"]
         ids = list(range(self.n_members))
         course_ids = list(range(self.n_courses))
         periods = list(range(self.n_time))
@@ -164,7 +166,6 @@ class AttendanceTableBuilder:
                 course_records.append(attendance_record)
 
             self.courses_records.append(course_records)
-
 
     def get_course_statistics(self, mean=False, std=False):
         """
