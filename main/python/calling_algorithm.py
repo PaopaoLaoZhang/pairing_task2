@@ -18,7 +18,7 @@ class CallingAlgorithm:
         self.knn = KNeighborsClassifier(n_neighbors)
         self.scale = MinMaxScaler()
 
-    def get_calling_scheme(self, data: list[list[pd.DataFrame]]) -> list[ndarray]:
+    def get_calling_scheme(self, data: list[list[pd.DataFrame]]) -> (list[ndarray], float):
         """
         输出点名方案
         """
@@ -59,7 +59,7 @@ class CallingAlgorithm:
         score = hit_num / request_num  # 统计得分
         print("all_request:{0}\nall_hit:{1}\nalgorithm score:{2}".format(request_num, hit_num, score))
 
-        return calling_scheme
+        return calling_scheme, score
 
     def fit(self, data):
         new_data = self.data_processing(data, concat=True)

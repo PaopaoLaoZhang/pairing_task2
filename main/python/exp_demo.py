@@ -3,7 +3,7 @@
 # @Author : zhangqinming
 # @File : exp_demo.py
 
-from AttendanceTableBuilder import AttendanceTableBuilder
+from attendance_table import AttendanceTableBuilder
 from calling_algorithm import get_algorithm
 import warnings
 
@@ -14,8 +14,8 @@ if __name__ == '__main__':
     train_table_builder = AttendanceTableBuilder(5, 20, 90)
     train_table_builder.build_tables()
     train_courses_records = train_table_builder.get_courses_records()
-    df = train_courses_records[0][0]
-    come_cnt = df["come"].sum()
+    # df = train_courses_records[0][0]
+    # come_cnt = df["come"].sum()
 
     # 生成算法
     algorithm = get_algorithm(train_courses_records)

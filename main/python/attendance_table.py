@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*- 
 # @Time : 2022/10/3 20:09 
 # @Author : zhangqinming
-# @File : AttendanceTableBuilder.py
+# @File : attendance_table.py
 import random
 import pandas as pd
 import numpy as np
